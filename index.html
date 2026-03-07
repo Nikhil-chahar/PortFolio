@@ -45,8 +45,8 @@ body {
     font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
     background-color: var(--bg-primary);
     color: var(--text-primary);
-    font-size: 1.05rem;
-    line-height: 1.8;
+    font-size: 1rem;
+    line-height: 1.7;
     overflow-x: hidden;
 }
 
@@ -89,34 +89,34 @@ img {
 }
 
 .nav-container {
-    max-width: 100%;
+    max-width: 1200px;
     margin: 0 auto;
     padding: 0 24px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap:100px;
+    gap: 40px;
 }
 
 .nav-logo {
-    font-size: 3rem;
+    font-size: 1.5rem;
     font-weight: 800;
     background: var(--gradient-1);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
-    margin-left: 100px;
-    padding-left: 200px;
+    margin-left: 0;
+    padding-left: 0;
     letter-spacing: -1px;
 }
 
 .nav-links {
     display: flex;
-    gap: 60px;
+    gap: 32px;
 }
 
 .nav-links a {
-    font-size: 1.5rem;
+    font-size: 0.95rem;
     font-weight: 500;
     color: var(--text-secondary);
     transition: var(--transition);
@@ -237,31 +237,31 @@ img {
 }
 
 .hero-greeting {
-    font-size: 2rem;
+    font-size: 1.1rem;
     color: var(--accent);
     font-weight: 500;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
     letter-spacing: 2px;
     text-transform: uppercase;
 }
 
 .hero-name {
-    font-size: clamp(2.5rem, 7vw, 4.5rem);
+    font-size: clamp(2rem, 5vw, 3rem);
     font-weight: 800;
     background: var(--gradient-2);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
-    line-height: 1.3;
-    margin-bottom: 16px;
+    line-height: 1.2;
+    margin-bottom: 12px;
 }
 
 .hero-typewriter {
     font-family: 'Fira Code', monospace;
-    font-size: 2rem;
+    font-size: 1.25rem;
     color: var(--text-secondary);
-    margin-bottom: 24px;
-    min-height: 40px;
+    margin-bottom: 16px;
+    min-height: 32px;
 }
 
 .typewriter-cursor {
@@ -276,10 +276,10 @@ img {
 }
 
 .hero-description {
-    font-size: 1.3rem;
+    font-size: 1rem;
     color: var(--text-secondary);
-    max-width: 550px;
-    margin: 0 auto 32px;
+    max-width: 500px;
+    margin: 0 auto 24px;
     line-height: 1.6;
 }
 
@@ -291,9 +291,9 @@ img {
 }
 
 .btn {
-    padding: 14px 32px;
+    padding: 12px 24px;
     border-radius: 8px;
-    font-size: 1.2rem;
+    font-size: 0.95rem;
     font-weight: 600;
     cursor: pointer;
     transition: var(--transition);
@@ -326,7 +326,7 @@ img {
 
 .hero-stats {
     display: flex;
-    gap: 60px;
+    gap: 40px;
     justify-content: center;
 }
 
@@ -335,7 +335,7 @@ img {
 }
 
 .stat-number {
-    font-size: 2.8rem;
+    font-size: 2rem;
     font-weight: 800;
     background: var(--gradient-1);
     -webkit-background-clip: text;
@@ -344,7 +344,7 @@ img {
 }
 
 .stat-suffix {
-    font-size: 1.8rem;
+    font-size: 1.4rem;
     font-weight: 700;
     background: var(--gradient-1);
     -webkit-background-clip: text;
@@ -354,11 +354,11 @@ img {
 
 .stat-label {
     display: block;
-    font-size: 1rem;
+    font-size: 0.75rem;
     color: var(--text-muted);
     margin-top: 2px;
     text-transform: uppercase;
-    letter-spacing: 3px;
+    letter-spacing: 2px;
 }
 
 /* Scroll Indicator */
@@ -402,7 +402,7 @@ img {
 
 /* ===== Sections ===== */
 .section {
-    padding: 80px 0;
+    padding: 60px 0;
 }
 
 .section-alt {
@@ -410,10 +410,10 @@ img {
 }
 
 .section-title {
-    font-size: 3rem;
+    font-size: 2rem;
     font-weight: 700;
     text-align: center;
-    margin-bottom: 56px;
+    margin-bottom: 40px;
     position: relative;
 }
 
@@ -431,14 +431,14 @@ img {
 .about-grid {
     display: grid;
     grid-template-columns: 1.3fr 1fr;
-    gap: 48px;
+    gap: 40px;
     align-items: start;
-    padding-bottom: 200px;
+    padding-bottom: 0;
 }
 
 .about-text p {
     color: var(--text-secondary);
-    font-size: 1.3rem;
+    font-size: 1rem;
 }
 
 .about-text strong {
@@ -478,8 +478,8 @@ img {
 }
 
 .info-card h3 {
-    font-size: 2rem;
-    margin-bottom: 20px;
+    font-size: 1.25rem;
+    margin-bottom: 16px;
     color: var(--accent-light);
 }
 
@@ -504,9 +504,9 @@ img {
 .skills-grid {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
-    gap: 24px;
-    padding-bottom: 100px;
-    margin-bottom: 50px;
+    gap: 20px;
+    padding-bottom: 0;
+    margin-bottom: 0;
 }
 
 .skill-category:nth-child(1),
@@ -527,7 +527,7 @@ img {
     background: var(--bg-card);
     border: 1px solid var(--border);
     border-radius: var(--radius);
-    padding: 36px;
+    padding: 24px;
     transition: var(--transition);
 }
 
@@ -552,11 +552,11 @@ img {
 }
 
 .skill-tag {
-    padding: 12px 22px;
+    padding: 8px 14px;
     background: rgba(108, 99, 255, 0.08);
     border: 1px solid rgba(108, 99, 255, 0.2);
-    border-radius: 8px;
-    font-size: 1.1rem;
+    border-radius: 6px;
+    font-size: 0.85rem;
     color: var(--text-secondary);
     transition: var(--transition);
 }
@@ -585,7 +585,7 @@ img {
     background: var(--bg-card);
     border: 1px solid var(--border);
     border-radius: var(--radius);
-    padding: 44px;
+    padding: 32px;
     transition: var(--transition);
     position: relative;
     overflow: hidden;
@@ -621,14 +621,14 @@ img {
 
 .project-card-horizontal .project-img {
     flex-shrink: 0;
-    width: 600px;
-    height: 400px;
+    width: 400px;
+    height: 280px;
     margin-bottom: 0;
 }
 
 .project-card-horizontal .project-img img {
-    width: 600px;
-    height: 400px;
+    width: 400px;
+    height: 280px;
     object-fit: cover;
 }
 
@@ -663,26 +663,26 @@ img {
 }
 
 .project-icon {
-    font-size: 3rem;
+    font-size: 2rem;
     line-height: 1;
 }
 
 .project-date {
-    font-size: 1.1rem;
+    font-size: 0.9rem;
     color: var(--text-muted);
     font-weight: 500;
 }
 
 .project-title {
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: 700;
-    margin-bottom: 8px;
+    margin-bottom: 6px;
 }
 
 .project-subtitle {
     color: var(--accent-light);
-    font-size: 1.2rem;
-    margin-bottom: 24px;
+    font-size: 1rem;
+    margin-bottom: 16px;
 }
 
 .project-details {
@@ -692,9 +692,9 @@ img {
 
 .project-details li {
     color: var(--text-secondary);
-    font-size: 1.15rem;
-    padding: 6px 0;
-    padding-left: 24px;
+    font-size: 0.95rem;
+    padding: 4px 0;
+    padding-left: 20px;
     position: relative;
 }
 
@@ -712,10 +712,10 @@ img {
 }
 
 .project-tech span {
-    padding: 8px 18px;
+    padding: 6px 12px;
     background: rgba(108, 99, 255, 0.08);
     border-radius: 6px;
-    font-size: 1.05rem;
+    font-size: 0.85rem;
     color: var(--accent-light);
     font-weight: 500;
 }
@@ -845,7 +845,7 @@ img {
 }
 
 .cp-rating {
-    font-size: 3.5rem;
+    font-size: 2.5rem;
     font-weight: 800;
     background: var(--gradient-1);
     -webkit-background-clip: text;
@@ -915,19 +915,19 @@ img {
 }
 
 .cert-icon {
-    font-size: 3rem;
-    margin-bottom: 14px;
+    font-size: 2rem;
+    margin-bottom: 12px;
     line-height: 1;
 }
 
 .cert-card h3 {
-    font-size: 1.1rem;
+    font-size: 1rem;
     font-weight: 600;
-    margin-bottom: 6px;
+    margin-bottom: 4px;
 }
 
 .cert-card p {
-    font-size: 0.95rem;
+    font-size: 0.85rem;
     color: var(--text-muted);
 }
 
@@ -940,8 +940,8 @@ img {
 
 .contact-text {
     color: var(--text-secondary);
-    font-size: 1.2rem;
-    margin-bottom: 40px;
+    font-size: 1rem;
+    margin-bottom: 32px;
 }
 
 .contact-text strong {
@@ -974,8 +974,8 @@ img {
 }
 
 .contact-icon {
-    font-size: 2rem;
-    margin-bottom: 6px;
+    font-size: 1.5rem;
+    margin-bottom: 4px;
     color: var(--accent-light);
     font-weight: 700;
     line-height: 1;
@@ -1205,13 +1205,13 @@ img {
 }
 
 .contest-stat-icon {
-    font-size: 2.2rem;
+    font-size: 1.8rem;
     line-height: 1;
-    margin-bottom: 14px;
+    margin-bottom: 12px;
 }
 
 .contest-stat-number {
-    font-size: 2rem;
+    font-size: 1.6rem;
     font-weight: 800;
     background: var(--gradient-1);
     -webkit-background-clip: text;
@@ -1221,7 +1221,7 @@ img {
 }
 
 .contest-stat-suffix {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     font-weight: 700;
     background: var(--gradient-1);
     -webkit-background-clip: text;
@@ -1331,18 +1331,19 @@ img {
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
-    justify-content: space-between;
-    gap: 400px;
+    justify-content: center;
+    gap: 60px;
     position: relative;
     z-index: 1;
-    max-width: 100%;
+    max-width: 1200px;
     width: 100%;
     padding: 0 24px;
+    margin: 0 auto;
 }
 
 .hero-layout .hero-content {
     text-align: center;
-    max-width: 800px;
+    max-width: 550px;
     flex: 1;
 }
 
@@ -1366,14 +1367,14 @@ img {
 }
 
 .hero-img-wrapper {
-    max-width: 600px;
-    max-height: 750px;
+    max-width: 320px;
+    max-height: 400px;
     width: auto;
     height: auto;
-    border-radius: 16px;
+    border-radius: 12px;
     overflow: hidden;
-    border: 4px solid rgba(108, 99, 255, 0.3);
-    box-shadow: 0 0 40px rgba(108, 99, 255, 0.2), 0 0 80px rgba(108, 99, 255, 0.1);
+    border: 3px solid rgba(108, 99, 255, 0.3);
+    box-shadow: 0 0 30px rgba(108, 99, 255, 0.2), 0 0 60px rgba(108, 99, 255, 0.1);
     position: relative;
     z-index: 2;
     background: var(--bg-card);
@@ -1381,8 +1382,8 @@ img {
 }
 
 .hero-img-wrapper img {
-    max-width: 600px;
-    max-height: 750px;
+    max-width: 320px;
+    max-height: 400px;
     width: auto;
     height: auto;
     display: block;
@@ -1464,54 +1465,54 @@ img {
 /* Laptop / Small Desktop (1024px - 1399px) */
 @media (max-width: 1399px) {
     .hero-layout {
-        gap: 100px;
+        gap: 50px;
         max-width: 100%;
     }
 
     .hero-img-wrapper,
     .hero-img-wrapper img {
-        max-width: 450px;
-        max-height: 560px;
+        max-width: 280px;
+        max-height: 350px;
     }
 
     .nav-logo {
-        margin-left: 20px;
-        padding-left: 40px;
+        margin-left: 0;
+        padding-left: 0;
     }
 
     .nav-links {
-        gap: 30px;
+        gap: 24px;
     }
 
     .nav-container {
-        gap: 40px;
+        gap: 30px;
     }
 }
 
 /* Tablet Landscape (900px - 1023px) */
 @media (max-width: 1023px) {
     .hero-layout {
-        gap: 60px;
+        gap: 40px;
     }
 
     .hero-img-wrapper,
     .hero-img-wrapper img {
-        max-width: 350px;
-        max-height: 440px;
+        max-width: 250px;
+        max-height: 320px;
     }
 
     .nav-logo {
-        margin-left: 10px;
-        padding-left: 10px;
-        font-size: 2rem;
+        margin-left: 0;
+        padding-left: 0;
+        font-size: 1.4rem;
     }
 
     .nav-links {
-        gap: 20px;
+        gap: 18px;
     }
 
     .nav-links a {
-        font-size: 1rem;
+        font-size: 0.9rem;
     }
 
     .nav-container {
@@ -1519,12 +1520,12 @@ img {
     }
 
     .about-grid {
-        padding-bottom: 80px;
+        padding-bottom: 0;
     }
 
     .skills-grid {
-        padding-bottom: 40px;
-        margin-bottom: 20px;
+        padding-bottom: 0;
+        margin-bottom: 0;
     }
 }
 
@@ -1594,8 +1595,8 @@ img {
 
     .hero-img-wrapper,
     .hero-img-wrapper img {
-        max-width: 320px;
-        max-height: 400px;
+        max-width: 240px;
+        max-height: 300px;
     }
 
     .hero {
@@ -1603,27 +1604,27 @@ img {
     }
 
     .hero-greeting {
-        font-size: 1.4rem;
+        font-size: 1rem;
     }
 
     .hero-name {
-        font-size: 2.5rem;
+        font-size: 2rem;
     }
 
     .hero-typewriter {
-        font-size: 1.4rem;
-    }
-
-    .hero-description {
         font-size: 1.1rem;
     }
 
+    .hero-description {
+        font-size: 0.95rem;
+    }
+
     .hero-stats {
-        gap: 30px;
+        gap: 24px;
     }
 
     .stat-number {
-        font-size: 2.2rem;
+        font-size: 1.8rem;
     }
 
     .about-grid {
@@ -1698,8 +1699,8 @@ img {
     }
 
     .section-title {
-        font-size: 2.2rem;
-        margin-bottom: 40px;
+        font-size: 1.75rem;
+        margin-bottom: 32px;
     }
 
     .hero-img-decoration {
@@ -2488,7 +2489,7 @@ img {
                         <span class="contact-label">Phone</span>
                         <span class="contact-value">+91 7455923411</span>
                     </a>
-                    <a href="https://linkedin.com" target="_blank" class="contact-card">
+                    <a href="https://www.linkedin.com/in/nikhil-chahar/" target="_blank" class="contact-card">
                         <span class="contact-icon">in</span>
                         <span class="contact-label">LinkedIn</span>
                         <span class="contact-value">Nikhil Chahar</span>
